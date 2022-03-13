@@ -1,0 +1,14 @@
+client.on("message", message => {
+ if(message.content === "") {
+    let embed = new Discord.MessageEmbed()
+    .setTitle("")
+    .setURL("")
+    .setAuthor("", "")
+    .setDescription("")
+    .setFooter("")
+    .setColor("")
+    .addField("", "")
+ 
+    message.channel.send( {embeds : [ embed ] } )
+  }
+})
